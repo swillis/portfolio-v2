@@ -8,12 +8,21 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <script type="text/javascript" src="//use.typekit.net/coq2nwt.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag  "all" %>
+
+    <%= stylesheet_link_tag "vendor/normalize" %>
+
   </head>
   
   <body class="<%= page_classes %>">
+
+    <%= javascript_include_tag "lib/site.js" %>
+
     <%= yield %>
+
   </body>
 </html>

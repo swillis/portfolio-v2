@@ -1,1 +1,1 @@
-//= require_tree .
+//= require "lib/site.js"
