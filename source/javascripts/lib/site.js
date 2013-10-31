@@ -4,13 +4,28 @@
 
 $(document).ready(function() {
   $('.splitter').hide();
+  // $('#homepage, nav').hide();
+});
+
+
+// Load homepage
+
+$(window).load(function() {
+  $('#homepage').fadeIn(3000);
 });
 
 
 // Engage splitter
 
 $('body').on('click', '.open-split', function() {
-  $('nav').slideUp(200);
-  $('#homepage').delay(150).fadeOut(200);
-  $('.splitter').delay(400).fadeIn(500);
+  $('#homepage').fadeOut(200);
+  $('nav').delay(200).slideUp(300);
+  $('.splitter').delay(500).fadeIn(500);
+  $('body').removeClass("glass").delay(500).queue(function(next){
+    $(this).addClass("glass");
+    next();
+});
 })
+
+
+// show splitter descriptions
