@@ -9,20 +9,18 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <script type="text/javascript" src="//use.typekit.net/coq2nwt.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    
     <%= stylesheet_link_tag "application" %>
 
-    <%= stylesheet_link_tag "vendor/normalize" %>
+    <script type="text/javascript" src="//use.typekit.net/ckx2rmg.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   </head>
   
   <body class="<%= page_classes %>">
 
-    <%= javascript_include_tag "lib/site.js" %>
-
     <%= yield %>
+
+    <%= javascript_include_tag "lib/site.js" %>
 
   </body>
 </html>
