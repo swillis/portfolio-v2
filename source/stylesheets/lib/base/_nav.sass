@@ -1,12 +1,36 @@
 nav
-  text-align: right
+  position: relative
+  height: 30px
+
+  p
+    font-size: 16px
+    color: #9e392e
+    font-weight: 500
+    text-align: left
+    padding-top: 10px
+  a
+    color: #9e392e
+    +transition(0.3s)
+
+    &:hover
+      color: white
 
   ul
+    position: absolute
+    top: 0
+    right: 0
     list-style: none
     padding-top: 10px
 
     li
       display: inline
-      font-weight: 400
-      color: #fff
       margin: 0 10px
+
+      a
+        color: #9e392e
+        text-decoration: none
+        font-weight: 500
+        +transition(0.3s)
+
+        &:hover
+          color: white

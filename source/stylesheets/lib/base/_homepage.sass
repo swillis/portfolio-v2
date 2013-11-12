@@ -3,21 +3,32 @@
   background-color: #ea5343
   height: 100%
 
-  h1
-    color: white
-    font-weight: 700
-    font-size: 35px
-    margin-bottom: 10px
+  img
+    margin-bottom: 30px
 
-  h2
-    color: #9e392e
-    font-size: 18px
+  .headline
 
-  a
-    text-decoration: none
-    color: white
-    font-size: 20px
-    padding: 20px 20px
-    +border-radius(5px)
-    border: 1px solid white
-    
+    h1
+      color: white
+      font-weight: 700
+      font-size: 60px
+      margin-bottom: 35px
+
+    h2
+      color: #9e392e
+      font-size: 18px
+      font-weight: 500
+      margin: 0 0 70px
+
+    a 
+      color: white
+      padding: 20px 17px
+      border: 2px solid rgba(255,255,255,0.5)
+      // text-transform: uppercase
+      letter-spacing: 1px
+      +transition(0.3s)
+      +border-radius(5px)
+      font-weight: 500
+
+      &:hover
+        border-color: white
