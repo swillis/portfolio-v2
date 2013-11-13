@@ -1,4 +1,4 @@
-/* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -8,55 +8,54 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-decoration: none; }
 
-/* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 17, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 21, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 body {
   line-height: 1; }
 
-/* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 blockquote:before, blockquote:after {
   content: "";
   content: none; }
 
-/* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 41, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 q:before, q:after {
   content: "";
   content: none; }
 
-/* line 38, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.sass */
+/* line 47, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
 body {
   font-family: "ratio";
   -webkit-font-smoothing: antialiased;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s; }
-  /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.sass */
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
   body em {
     font-weight: 600; }
-  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.sass */
+  /* line 11, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
   body #about,
   body #work,
   body #contact,
   body footer {
     text-align: center; }
-    /* line 15, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.sass */
+    /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
     body #about h2,
     body #work h2,
     body #contact h2,
@@ -64,7 +63,7 @@ body {
       font-size: 35px;
       font-weight: 600;
       padding: 60px 0 10px; }
-    /* line 20, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.sass */
+    /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
     body #about p,
     body #work p,
     body #contact p,
@@ -75,93 +74,87 @@ body {
       font-weight: 500;
       line-height: 1.5em; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
 .container {
   margin: 0 auto;
   max-width: 960px;
   position: relative;
   padding: 1em; }
 
-/* line 7, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.sass */
+/* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
 .container:first-child {
   padding: 0 1em 1em; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
 nav {
   position: relative;
   height: 30px; }
-  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+  /* line 4, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
   nav p {
     font-size: 16px;
     font-weight: 500;
     text-align: left;
     padding-top: 10px; }
-  /* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+  /* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
   nav a {
     color: white;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s; }
-  /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+  /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
   nav ul {
     position: absolute;
     top: 0;
     right: 0;
     list-style: none;
     padding-top: 10px; }
-    /* line 21, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+    /* line 20, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
     nav ul li {
       display: inline;
       margin: 0 10px; }
-      /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+      /* line 23, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
       nav ul li a {
         color: #9e392e;
         text-decoration: none;
         font-weight: 500;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
-        -o-transition: 0.3s;
         transition: 0.3s; }
-        /* line 31, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+        /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
         nav ul li a:hover {
           color: white; }
-      /* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+      /* line 32, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
       nav ul li a.hire {
         color: white;
         -webkit-transition: 0s;
         -moz-transition: 0s;
-        -o-transition: 0s;
         transition: 0s; }
-        /* line 38, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.sass */
+        /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
         nav ul li a.hire:hover {
           border-bottom: 2px solid white; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
 #homepage {
   text-align: center;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ea5343), color-stop(100%, #ea6243));
   background-image: -webkit-linear-gradient(top, #ea5343, #ea6243);
-  background-image: -moz-linear-gradient(top, #ea5343, #ea6243);
-  background-image: -o-linear-gradient(top, #ea5343, #ea6243);
-  background-image: linear-gradient(top, #ea5343, #ea6243);
+  background-image: linear-gradient(to bottom, #ea5343, #ea6243);
   height: 100%; }
-  /* line 7, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.sass */
+  /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage img {
     margin-bottom: 30px; }
-  /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.sass */
+  /* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline h1 {
     color: white;
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 15px; }
-  /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.sass */
+  /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline h2 {
     color: #9e392e;
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 60px; }
-  /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.sass */
+  /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline a {
     color: white;
     padding: 20px 17px;
@@ -169,81 +162,76 @@ nav {
     letter-spacing: 1px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
     border-radius: 5px;
     font-weight: 500; }
-    /* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.sass */
+    /* line 31, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
     #homepage .headline a:hover {
       border-color: white; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
 #about {
   border-top: 5px dashed #ea6243;
   text-align: center;
   background: #283849; }
-  /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about h2 {
     color: white; }
-  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+  /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about img {
     max-height: 200px;
     margin: 0 0 20px; }
-  /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+  /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about p {
     text-align: justify !important;
     font-size: 18px;
     color: #c4c4c4; }
-    /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+    /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
     #about p a {
       color: #ea6243;
       font-weight: 500; }
-      /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+      /* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
       #about p a:hover {
         border-bottom: 2px solid #ea6243; }
-  /* line 26, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.sass */
+  /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about .bios {
     padding: 60px 0; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 #work {
   border-top: 5px dashed #283849;
   background: #21a288; }
-  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+  /* line 4, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   #work h2 {
     color: white; }
-  /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+  /* line 7, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   #work p {
     color: #0d584a; }
 
-/* line 11, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .grid {
   padding: 20px 20px 100px 20px;
   max-width: 1300px;
   margin: 0 auto;
   list-style: none;
   text-align: center; }
-  /* line 17, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+  /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .grid li {
     display: inline-block;
     margin: 0;
     padding: 20px;
     text-align: left;
     position: relative; }
-  /* line 23, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+  /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .grid figure {
     margin: 0;
     position: relative; }
-    /* line 26, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+    /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
     .grid figure img {
       max-width: 100%;
       display: block;
       position: relative; }
-  /* line 30, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+  /* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .grid figcaption {
     position: absolute;
     top: 0;
@@ -251,12 +239,12 @@ nav {
     padding: 20px;
     background: #2c3f52;
     color: #ed4e6e; }
-    /* line 37, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+    /* line 41, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
     .grid figcaption h3 {
       margin: 0 0 1em;
       padding: 0;
       color: white; }
-    /* line 41, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+    /* line 46, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
     .grid figcaption a {
       text-align: center;
       padding: 5px 10px;
@@ -265,29 +253,29 @@ nav {
       background: #ed4e6e;
       color: white; }
 
-/* line 49, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 57, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figure {
   overflow: hidden; }
-  /* line 51, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+  /* line 59, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .cs-style-3 figure img {
     -webkit-transition: -webkit-transform 0.4s;
     -moz-transition: -moz-transform 0.4s;
     transition: transform 0.4s; }
 
-/* line 56, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 66, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .no-touch .cs-style-3 figure:hover img {
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
   transform: translateY(-50px); }
 
-/* line 63, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 74, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figure.cs-hover img {
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
   transform: translateY(-50px); }
-/* line 68, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 80, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figcaption {
   height: 100px;
   width: 360px;
@@ -302,7 +290,7 @@ nav {
   -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
   transition: transform 0.4s, opacity 0.1s 0.3s; }
 
-/* line 82, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 96, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .no-touch .cs-style-3 figure:hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -313,7 +301,7 @@ nav {
   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s; }
 
-/* line 93, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 108, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -323,25 +311,25 @@ nav {
   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s; }
-/* line 102, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.sass */
+/* line 118, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
   right: 20px; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
 #contact {
   border-top: 5px dashed #21a288;
   background: #283849;
   height: 307px; }
-  /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.sass */
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
   #contact h2 {
     color: white; }
-  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.sass */
+  /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
   #contact p {
     color: #c4c4c4;
     margin-bottom: 50px !important; }
-  /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.sass */
+  /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
   #contact a {
     color: #283849;
     background: #c4c4c4;
@@ -352,36 +340,31 @@ nav {
     margin: 30px 0;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
     border-radius: 5px; }
-    /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.sass */
+    /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
     #contact a:hover {
       background: white; }
 
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.sass */
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
 footer {
   background: #ecf0f1;
   border-top: 5px dashed #283849; }
-  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.sass */
+  /* line 4, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
   footer ul.social {
     padding: 3em; }
-    /* line 7, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.sass */
+    /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
     footer ul.social li {
       display: inline;
       margin: 20px 30px; }
-      /* line 11, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.sass */
+      /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
       footer ul.social li a {
         color: #283849;
         font-size: 18px; }
-        /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.sass */
+        /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
         footer ul.social li a:hover {
           border-bottom: 2px solid #283849; }
-  /* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.sass */
+  /* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
   footer p.copy {
     margin: 0 auto;
     padding: 0 0 3em;
