@@ -1,0 +1,27 @@
+#about {
+  border-top: 5px dashed #ea6243;
+  text-align: center;
+  background: #283849;
+  h2 {
+    color: white;
+  }
+  img {
+    max-height: 200px;
+    margin: 0 0 20px;
+  }
+  p {
+    text-align: justify !important;
+    font-size: 18px;
+    color: #c4c4c4;
+    a {
+      color: #ea6243;
+      font-weight: 500;
+      &:hover {
+        border-bottom: 2px solid #ea6243;
+      }
+    }
+  }
+  .bios {
+    padding: 60px 0;
+  }
+}

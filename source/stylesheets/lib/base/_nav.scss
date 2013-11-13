@@ -1,0 +1,41 @@
+nav {
+  position: relative;
+  height: 30px;
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 10px;
+  }
+  a {
+    color: white;
+    @include transition(0.3s);
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+    padding-top: 10px;
+    li {
+      display: inline;
+      margin: 0 10px;
+      a {
+        color: #9e392e;
+        text-decoration: none;
+        font-weight: 500;
+        @include transition(0.3s);
+        &:hover {
+          color: white;
+        }
+      }
+      a.hire {
+        color: white;
+        @include transition(0s);
+        &:hover {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+}

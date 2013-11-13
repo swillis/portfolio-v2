@@ -1,0 +1,26 @@
+#contact {
+  border-top: 5px dashed #21a288;
+  background: #283849;
+  height: 307px;
+  h2 {
+    color: white;
+  }
+  p {
+    color: #c4c4c4;
+    margin-bottom: 50px !important;
+  }
+  a {
+    color: #283849;
+    background: #c4c4c4;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 30px 0;
+    @include transition(0.3s);
+    border-radius: 5px;
+    &:hover {
+      background: white;
+    }
+  }
+}
