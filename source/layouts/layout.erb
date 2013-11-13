@@ -9,11 +9,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <%= stylesheet_link_tag "portfolio-v2/stylesheets/application.css" %>
+    <%= stylesheet_link_tag "stylesheets/application.css" %>
 
-    <%= javascript_include_tag "portfolio-v2/javascripts/vendor/modernizer-custom.js" %>
+    <%= javascript_include_tag "javascripts/vendor/modernizer-custom.js" %>
 
-    <%= javascript_include_tag "portfolio-v2/javascripts/vendor/toucheffects.js" %>
+    <%= javascript_include_tag "javascripts/vendor/toucheffects.js" %>
 
     <script type="text/javascript" src="//use.typekit.net/ckx2rmg.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -24,7 +24,7 @@
 
     <%= yield %>
 
-    <%= javascript_include_tag "portfolio-v2/javascripts/lib/site.js" %>
+    <%= javascript_include_tag "javascripts/lib/site.js" %>
 
   </body>
 </html>
