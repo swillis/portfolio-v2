@@ -3,11 +3,11 @@
 // Page load state
 
 $(function() {
-  $('.slide').css({'height': (($(window).height()) )});
+  $('.slide').css({'min-height': (($(window).height()) )});
 })
 
 $(window).resize(function(){
-  $('.slide').css({'height': (($(window).height()) )});
+  $('.slide').css({'min-height': (($(window).height()) )});
 });
 
 $(function() {
