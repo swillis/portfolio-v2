@@ -1,6 +1,10 @@
 //= require vendor/jquery.min.js
 
+
 // Page load state
+
+
+// Set home slide width
 
 $(function() {
   $('.slide').css({'min-height': (($(window).height()) )});
@@ -10,6 +14,9 @@ $(window).resize(function(){
   $('.slide').css({'min-height': (($(window).height()) )});
 });
 
+
+// center home slide
+
 $(function() {
   var headHeight = $('.centered').height()/2;
   var windowHeight = $(window).height();
@@ -30,20 +37,9 @@ $(window).resize(function() {
   })
 })
 
-$(function() {
-  var headHeight = $('.bio').height()/2;
-  var windowHeight = $(window).height();
-  var halfWay = windowHeight/2;
-  $('.bio').css({
-    'padding-top': halfWay - headHeight - 100
-  })
-})
 
-$(window).resize(function() {
-  var headHeight = $('.bio').height()/2;
-  var windowHeight = $(window).height();
-  var halfWay = windowHeight/2;
-  $('.bio').css({
-    'padding-top': halfWay - headHeight - 100
-  })
-})
+// Smooth scroll
+
+function goToByScroll(id){
+  $('html, body').animate({scrollTop: $("#"+id).offset().top - 60},'slow');
+}
