@@ -1,4 +1,5 @@
 //= require vendor/jquery.min.js
+//= require vendor/jquery-ui-1.10.3.custom.min.js
 
 
 // Page load state
@@ -40,6 +41,17 @@ $(window).resize(function() {
 
 // Smooth scroll
 
-function goToByScroll(id){
-  $('html, body').animate({scrollTop: $("#"+id).offset().top - 60},'slow');
-}
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash,
+      $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 1000, 'easeOutQuad', function () {
+          window.location.hash = target;
+      });
+  });
+});
