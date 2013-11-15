@@ -69,3 +69,26 @@ $(document).ready(function(){
       });
   });
 });
+
+
+// Fade in's
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},700);
+            }
+        }); 
+    });
+});
+
+// homepage fade in
+
+$(window).load(function() {
+  $('nav').animate({'opacity':'1'},900, 'easeOutQuad');
+  $('.headline').delay(900).animate({'opacity':'1'}, 900, 'easeOutQuad');
+})
+;
