@@ -85,6 +85,10 @@ body {
 .container:first-child {
   padding: 0 1em 1em; }
 
+/* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.hideme, .headline, nav {
+  opacity: 0; }
+
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
 nav {
   position: relative;

@@ -8,3 +8,7 @@
 .container:first-child {
   padding: 0 1em 1em;
 }
+
+.hideme, .headline, nav {
+  opacity: 0;
+}
