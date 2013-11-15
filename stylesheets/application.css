@@ -221,64 +221,85 @@ nav {
     margin: 0;
     padding: 20px;
     text-align: left;
-    position: relative; }
-  /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    position: relative;
+    max-width: 360px; }
+  /* line 26, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .grid figure {
     margin: 0;
     position: relative; }
-    /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    /* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
     .grid figure img {
       max-width: 100%;
       display: block;
       position: relative; }
-  /* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .grid figcaption {
     position: absolute;
     top: 0;
     left: 0;
     padding: 20px;
-    background: #2c3f52;
-    color: #ed4e6e; }
-    /* line 41, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    background: #283849;
+    color: #c4c4c4; }
+    /* line 42, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
     .grid figcaption h3 {
-      margin: 0 0 1em;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 0.3em;
       padding: 0;
       color: white; }
-    /* line 46, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-    .grid figcaption a {
+    /* line 49, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption span.description {
+      line-height: 1.2em; }
+    /* line 52, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a, .grid figcaption span.category {
       text-align: center;
       padding: 5px 10px;
       border-radius: 2px;
       display: inline-block;
-      background: #ed4e6e;
-      color: white; }
+      background: #ea5343;
+      color: white;
+      font-weight: 500;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s; }
+    /* line 62, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption span.category {
+      background: #c4c4c4;
+      color: #283849; }
+    /* line 66, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a.hireme {
+      padding: 15px 20px;
+      right: 132px; }
+    /* line 70, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a:hover {
+      background: #ec6455; }
 
-/* line 57, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 76, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figure {
   overflow: hidden; }
-  /* line 59, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  /* line 78, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
   .cs-style-3 figure img {
     -webkit-transition: -webkit-transform 0.4s;
     -moz-transition: -moz-transform 0.4s;
     transition: transform 0.4s; }
 
-/* line 66, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 85, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .no-touch .cs-style-3 figure:hover img {
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
   transform: translateY(-50px); }
 
-/* line 74, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 93, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figure.cs-hover img {
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
   transform: translateY(-50px); }
-/* line 80, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 99, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figcaption {
   height: 100px;
-  width: 360px;
+  width: 320px;
   top: auto;
   bottom: 0;
   opacity: 0;
@@ -290,7 +311,7 @@ nav {
   -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
   transition: transform 0.4s, opacity 0.1s 0.3s; }
 
-/* line 96, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 115, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .no-touch .cs-style-3 figure:hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -301,7 +322,7 @@ nav {
   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s; }
 
-/* line 108, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 127, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -311,11 +332,16 @@ nav {
   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
   transition: transform 0.4s, opacity 0.1s; }
-/* line 118, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+/* line 137, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
   right: 20px; }
+/* line 142, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+.cs-style-3 figcaption span.category {
+  position: absolute;
+  bottom: 20px;
+  left: 20px; }
 
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
 #contact {
