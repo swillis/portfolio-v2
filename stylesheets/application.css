@@ -82,7 +82,7 @@ body {
   padding: 1em; }
 
 /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-.container:first-child {
+.container:nth-child(1) {
   padding: 0 1em 1em; }
 
 /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
@@ -141,24 +141,23 @@ nav {
 #homepage {
   text-align: center;
   background-image: -webkit-linear-gradient(top, #ea5343, #ea6243);
-  background-image: linear-gradient(to bottom, #ea5343, #ea6243);
-  height: 100%; }
-  /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  background-image: linear-gradient(to bottom, #ea5343, #ea6243); }
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage img {
     margin-bottom: 30px; }
-  /* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline h1 {
     color: white;
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 15px; }
-  /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  /* line 15, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline h2 {
     color: #9e392e;
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 60px; }
-  /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  /* line 21, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline a {
     color: white;
     padding: 20px 17px;
@@ -169,7 +168,7 @@ nav {
     transition: 0.3s;
     border-radius: 5px;
     font-weight: 500; }
-    /* line 31, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    /* line 30, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
     #homepage .headline a:hover {
       border-color: white; }
 
@@ -199,7 +198,7 @@ nav {
         border-bottom: 2px solid #ea6243; }
   /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about .bios {
-    padding: 60px 0; }
+    padding: 40px 0; }
 
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 #work {
@@ -214,7 +213,7 @@ nav {
 
 /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 .grid {
-  padding: 20px 20px 100px 20px;
+  padding: 20px 20px 60px 20px;
   max-width: 1300px;
   margin: 0 auto;
   list-style: none;
