@@ -23,5 +23,13 @@
   }
   .bios {
     padding: 40px 0;
+
+    .bio-img {
+      border: 5px solid #314559;
+      width: 200px;
+      height: 200px;
+      border-radius: 500px;
+      margin: 0 auto 25px;
+    }
   }
 }

@@ -199,6 +199,13 @@ nav {
   /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about .bios {
     padding: 40px 0; }
+    /* line 27, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+    #about .bios .bio-img {
+      border: 5px solid #314559;
+      width: 200px;
+      height: 200px;
+      border-radius: 500px;
+      margin: 0 auto 25px; }
 
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
 #work {
