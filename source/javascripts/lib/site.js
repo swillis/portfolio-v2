@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 // Fade in's
 
-$(document).ready(function() {
+$(window).load(function() {
     $(window).scroll( function(){
         $('.hideme').each( function(i){
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
@@ -74,6 +74,6 @@ $(document).ready(function() {
 // homepage fade in
 
 $(window).load(function() {
-  $('nav').animate({'opacity':'1'},900, 'easeOutQuad');
-  $('.headline').delay(900).animate({'opacity':'1'}, 900, 'easeOutQuad');
+  $('nav').animate({'opacity':'1'},700, 'easeOutQuad');
+  $('.headline').delay(700).animate({'opacity':'1'}, 700, 'easeOutQuad');
 })

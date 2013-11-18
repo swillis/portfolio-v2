@@ -9,13 +9,9 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <%= stylesheet_link_tag "stylesheets/application.css" %>
-
     <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
 
     <script src="javascripts/vendor/modernizer-custom.js"></script>
-
-    <script src="javascripts/vendor/toucheffects.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/ckx2rmg.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -34,6 +30,8 @@
   <body class="<%= page_classes %>">
 
     <%= yield %>
+
+    <script src="javascripts/vendor/toucheffects.js"></script>
 
     <script src='javascripts/lib/site.js'></script>
 
