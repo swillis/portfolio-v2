@@ -18,8 +18,14 @@ footer {
   }
   p.copy {
     margin: 0 auto;
-    padding: 0 0 3em;
+    padding: 0 0 1em;
     font-size: 14px;
+    font-weight: 400;
+    color: #283849;
+  }
+  p.hint {
+    padding: 0 0 3em;
+    font-size: 10px;
     font-weight: 400;
     color: #283849;
   }

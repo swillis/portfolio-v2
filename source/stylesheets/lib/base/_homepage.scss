@@ -1,7 +1,7 @@
 #homepage {
   text-align: center;
-  // background-color: #ea5343
-  @include background-image(linear-gradient(top, #ea5343, #ea6243));
+  background-color: #f76848;
+  @include background-image(linear-gradient(top, #ea5343, #f76848));
   img {
     margin-bottom: 30px;
   }
@@ -22,7 +22,6 @@
       color: white;
       padding: 20px 17px;
       border: 2px solid rgba(255, 255, 255, 0.3);
-      // text-transform: uppercase
       letter-spacing: 1px;
       @include transition(0.3s);
       border-radius: 5px;

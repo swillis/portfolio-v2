@@ -6,6 +6,10 @@ nav {
     font-weight: 500;
     text-align: left;
     padding-top: 10px;
+
+    a.title {
+      cursor: default;
+    }
   }
   a {
     color: white;
