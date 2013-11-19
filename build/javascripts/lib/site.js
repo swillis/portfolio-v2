@@ -91,4 +91,11 @@ $(window).load(function() {
   $('nav').animate({'opacity':'1'},700, 'easeOutQuad');
   $('.headline').delay(700).animate({'opacity':'1'}, 700, 'easeOutQuad');
 })
+
+
+// hint
+
+$('body').on('click', '.title', function() {
+  alert('Up, up, down, down, left, right, left, right, B, A.');
+})
 ;
