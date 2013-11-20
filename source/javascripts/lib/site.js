@@ -1,4 +1,3 @@
-//= require vendor/jquery.min.js
 //= require vendor/jquery-ui-1.10.3.custom.min.js
 
 
