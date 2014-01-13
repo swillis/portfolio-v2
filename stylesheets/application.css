@@ -39,6 +39,102 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 3, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  padding: 1em; }
+
+/* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.container:nth-child(1) {
+  padding: 0 1em 1em; }
+
+/* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.hideme, .headline, nav {
+  opacity: 0; }
+
+/* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.content {
+  position: relative;
+  z-index: 10; }
+
+/* line 23, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.pt-page-rotateFall {
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation: rotateFall 1s both ease-in;
+  -moz-transform-origin: 0% 0%;
+  -moz-animation: rotateFall 1s both ease-in;
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+/* fall */
+@-webkit-keyframes rotateFall {
+  /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg); }
+
+  /* line 36, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  20% {
+    -webkit-transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out; }
+
+  /* line 37, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  40% {
+    -webkit-transform: rotateZ(17deg); }
+
+  /* line 38, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  60% {
+    -webkit-transform: rotateZ(16deg); }
+
+  /* line 39, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg); } }
+
+@-moz-keyframes rotateFall {
+  /* line 42, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  0% {
+    -moz-transform: rotateZ(0deg); }
+
+  /* line 43, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  20% {
+    -moz-transform: rotateZ(10deg);
+    -moz-animation-timing-function: ease-out; }
+
+  /* line 44, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  40% {
+    -moz-transform: rotateZ(17deg); }
+
+  /* line 45, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  60% {
+    -moz-transform: rotateZ(16deg); }
+
+  /* line 46, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  100% {
+    -moz-transform: translateY(100%) rotateZ(17deg); } }
+
+@keyframes rotateFall {
+  /* line 49, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  0% {
+    transform: rotateZ(0deg); }
+
+  /* line 50, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out; }
+
+  /* line 51, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  40% {
+    transform: rotateZ(17deg); }
+
+  /* line 52, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  60% {
+    transform: rotateZ(16deg); }
+
+  /* line 53, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  100% {
+    transform: translateY(100%) rotateZ(17deg); } }
+
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
 body {
   font-family: "ratio";
@@ -73,102 +169,13 @@ body {
       margin: 0 auto 1em;
       font-weight: 500;
       line-height: 1.5em; }
-
-/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  position: relative;
-  padding: 1em; }
-
-/* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-.container:nth-child(1) {
-  padding: 0 1em 1em; }
-
-/* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-.hideme, .headline, nav {
-  opacity: 0; }
-
-/* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-.content {
-  position: relative;
-  z-index: 10; }
-
-/* line 21, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-.pt-page-rotateFall {
-  -webkit-transform-origin: 0% 0%;
-  -webkit-animation: rotateFall 1s both ease-in;
-  -moz-transform-origin: 0% 0%;
-  -moz-animation: rotateFall 1s both ease-in;
-  transform-origin: 0% 0%;
-  animation: rotateFall 1s both ease-in; }
-
-/* fall */
-@-webkit-keyframes rotateFall {
-  /* line 33, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  0% {
-    -webkit-transform: rotateZ(0deg); }
-
-  /* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  20% {
-    -webkit-transform: rotateZ(10deg);
-    -webkit-animation-timing-function: ease-out; }
-
-  /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  40% {
-    -webkit-transform: rotateZ(17deg); }
-
-  /* line 36, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  60% {
-    -webkit-transform: rotateZ(16deg); }
-
-  /* line 37, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  100% {
-    -webkit-transform: translateY(100%) rotateZ(17deg); } }
-
-@-moz-keyframes rotateFall {
-  /* line 40, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  0% {
-    -moz-transform: rotateZ(0deg); }
-
-  /* line 41, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  20% {
-    -moz-transform: rotateZ(10deg);
-    -moz-animation-timing-function: ease-out; }
-
-  /* line 42, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  40% {
-    -moz-transform: rotateZ(17deg); }
-
-  /* line 43, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  60% {
-    -moz-transform: rotateZ(16deg); }
-
-  /* line 44, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  100% {
-    -moz-transform: translateY(100%) rotateZ(17deg); } }
-
-@keyframes rotateFall {
-  /* line 47, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  0% {
-    transform: rotateZ(0deg); }
-
-  /* line 48, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  20% {
-    transform: rotateZ(10deg);
-    animation-timing-function: ease-out; }
-
-  /* line 49, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  40% {
-    transform: rotateZ(17deg); }
-
-  /* line 50, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  60% {
-    transform: rotateZ(16deg); }
-
-  /* line 51, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
-  100% {
-    transform: translateY(100%) rotateZ(17deg); } }
+      @media (max-width: 640px) {
+        /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+        body #about p,
+        body #work p,
+        body #contact p,
+        body footer p {
+          font-size: 16px; } }
 
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
 nav {
@@ -220,29 +227,48 @@ nav {
         /* line 39, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
         nav ul li a.hire:hover {
           border-bottom: 2px solid white; }
+      @media (max-width: 640px) {
+        /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+        nav ul li {
+          display: none; } }
+      @media (max-width: 640px) {
+        /* line 48, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+        nav ul li:last-child {
+          display: inline; } }
 
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
 #homepage {
+  position: relative;
+  height: 100%;
   text-align: center;
   background-color: #f76848;
   background-image: -webkit-linear-gradient(top, #ea5343, #f76848);
   background-image: linear-gradient(to bottom, #ea5343, #f76848); }
-  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
-  #homepage img {
-    margin-bottom: 30px; }
-  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  @media (max-width: 640px) {
+    /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    #homepage .headline {
+      padding: 0 20px; } }
+  /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline h1 {
     color: white;
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 15px; }
-  /* line 15, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    @media (max-width: 640px) {
+      /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+      #homepage .headline h1 {
+        font-size: 40px; } }
+  /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline h2 {
     color: #9e392e;
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 60px; }
-  /* line 21, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    @media (max-width: 640px) {
+      /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+      #homepage .headline h2 {
+        font-size: 16px; } }
+  /* line 36, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
   #homepage .headline a {
     color: white;
     padding: 20px 17px;
@@ -253,7 +279,7 @@ nav {
     transition: 0.3s;
     border-radius: 5px;
     font-weight: 500; }
-    /* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    /* line 45, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
     #homepage .headline a:hover {
       border-color: white; }
 
@@ -281,10 +307,14 @@ nav {
       /* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
       #about p a:hover {
         border-bottom: 2px solid #ea6243; }
-  /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+    @media (max-width: 640px) {
+      /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+      #about p {
+        font-size: 16px; } }
+  /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
   #about .bios {
     padding: 40px 0; }
-    /* line 27, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+    /* line 31, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
     #about .bios .bio-img {
       border: 5px solid #314559;
       width: 200px;
@@ -379,76 +409,80 @@ nav {
       .grid figcaption a.credit:hover {
         border-bottom: 2px solid #ea6243;
         background: none; }
+    @media (max-width: 640px) {
+      /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+      .grid figcaption {
+        display: none; } }
 
-/* line 88, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.cs-style-3 figure {
-  overflow: hidden; }
-  /* line 90, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-  .cs-style-3 figure img {
-    -webkit-transition: -webkit-transform 0.4s;
-    -moz-transition: -moz-transform 0.4s;
-    transition: transform 0.4s; }
+@media (min-width: 640px) {
+  /* line 93, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figure {
+    overflow: hidden; }
+    /* line 95, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .cs-style-3 figure img {
+      -webkit-transition: -webkit-transform 0.4s;
+      -moz-transition: -moz-transform 0.4s;
+      transition: transform 0.4s; }
 
-/* line 97, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.no-touch .cs-style-3 figure:hover img {
-  -webkit-transform: translateY(-50px);
-  -moz-transform: translateY(-50px);
-  -ms-transform: translateY(-50px);
-  transform: translateY(-50px); }
+  /* line 102, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .no-touch .cs-style-3 figure:hover img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px); }
 
-/* line 105, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.cs-style-3 figure.cs-hover img {
-  -webkit-transform: translateY(-50px);
-  -moz-transform: translateY(-50px);
-  -ms-transform: translateY(-50px);
-  transform: translateY(-50px); }
-/* line 111, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.cs-style-3 figcaption {
-  height: 100px;
-  width: 320px;
-  top: auto;
-  bottom: 0;
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-  transition: transform 0.4s, opacity 0.1s 0.3s; }
+  /* line 110, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figure.cs-hover img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  /* line 116, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figcaption {
+    height: 100px;
+    width: 320px;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s; }
 
-/* line 127, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.no-touch .cs-style-3 figure:hover figcaption {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
-  transition: transform 0.4s, opacity 0.1s; }
+  /* line 132, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .no-touch .cs-style-3 figure:hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s; }
 
-/* line 139, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.cs-style-3 figure.cs-hover figcaption {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
-  transition: transform 0.4s, opacity 0.1s; }
-/* line 149, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.cs-style-3 figcaption a {
-  position: absolute;
-  bottom: 20px;
-  right: 20px; }
-/* line 154, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
-.cs-style-3 figcaption span.category {
-  position: absolute;
-  bottom: 20px;
-  left: 20px; }
-
+  /* line 144, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s; }
+  /* line 154, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+  /* line 159, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figcaption span.category {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; } }
 /* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
 #contact {
   border-top: 5px dashed #21a288;
@@ -489,21 +523,25 @@ footer {
     footer ul.social li {
       display: inline;
       margin: 20px 30px; }
-      /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+      @media (max-width: 640px) {
+        /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+        footer ul.social li {
+          display: block; } }
+      /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
       footer ul.social li a {
         color: #283849;
         font-size: 18px; }
-        /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+        /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
         footer ul.social li a:hover {
           border-bottom: 2px solid #283849; }
-  /* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+  /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
   footer p.copy {
     margin: 0 auto;
     padding: 0 0 1em;
     font-size: 14px;
     font-weight: 400;
     color: #283849; }
-  /* line 26, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+  /* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
   footer p.hint {
     padding: 0 0 3em;
     font-size: 10px;
@@ -516,27 +554,28 @@ footer {
   position: fixed;
   z-index: 1;
   min-width: 100%;
-  background: #283849; }
-  /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  background: #283849;
+  overflow: hidden; }
+  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
   .egg h1 {
     font-size: 40px;
     color: white;
     font-weight: 700;
     margin: 60px 0 10px; }
-  /* line 15, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
   .egg p {
     font-size: 18px;
     color: #c4c4c4;
     width: 440px;
     margin: 0 auto 20px;
     line-height: 1.5em; }
-  /* line 23, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
   .egg iframe {
     margin-bottom: 20px; }
-  /* line 27, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
   .egg a {
     color: #ea6243;
     font-weight: 500; }
-    /* line 31, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+    /* line 32, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
     .egg a:hover {
       border-bottom: 2px solid #ea6243; }
