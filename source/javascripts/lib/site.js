@@ -81,5 +81,5 @@ $(window).load(function() {
 // hint
 
 $('body').on('click', '.title', function() {
-  alert('Up, up, down, down, left, right, left, right, B, A.');
+  alert('Clue: up, up, down, down, left, right, left, right, B, A. Close this box to continue.');
 })

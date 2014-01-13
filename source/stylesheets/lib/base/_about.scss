@@ -20,6 +20,10 @@
         border-bottom: 2px solid #ea6243;
       }
     }
+
+    @media (max-width: $small-screen) {
+      font-size: 16px;
+    }
   }
   .bios {
     padding: 40px 0;

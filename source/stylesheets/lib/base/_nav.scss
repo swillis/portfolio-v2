@@ -40,6 +40,16 @@ nav {
           border-bottom: 2px solid white;
         }
       }
+
+      @media (max-width: $small-screen) {
+        display: none;
+      }
+
+      &:last-child {
+        @media (max-width: $small-screen) {
+          display: inline;
+        }
+      }
     }
   }
 }
