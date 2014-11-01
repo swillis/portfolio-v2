@@ -1,0 +1,36 @@
+.egg {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  min-width: 100%;
+  background: #283849;
+  overflow: hidden;
+
+  h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin: 60px 0 10px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #c4c4c4;
+    width: 440px;
+    margin: 0 auto 20px;
+    line-height: 1.5em;
+  }
+
+  iframe {
+    margin-bottom: 20px
+  }
+
+  a {
+    color: #ea6243;
+    font-weight: 500;
+
+    &:hover {
+      border-bottom: 2px solid #ea6243;
+    }
+  }
+}

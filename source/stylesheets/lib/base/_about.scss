@@ -1,0 +1,39 @@
+#about {
+  border-top: 5px dashed #f76848;
+  text-align: center;
+  background: #283849;
+  h2 {
+    color: white;
+  }
+  img {
+    max-height: 200px;
+    margin: 0 0 20px;
+  }
+  p {
+    text-align: justify !important;
+    font-size: 18px;
+    color: #c4c4c4;
+    a {
+      color: #ea6243;
+      font-weight: 500;
+      &:hover {
+        border-bottom: 2px solid #ea6243;
+      }
+    }
+
+    @media (max-width: $small-screen) {
+      font-size: 16px;
+    }
+  }
+  .bios {
+    padding: 40px 0;
+
+    .bio-img {
+      border: 5px solid #314559;
+      width: 200px;
+      height: 200px;
+      border-radius: 500px;
+      margin: 0 auto 25px;
+    }
+  }
+}

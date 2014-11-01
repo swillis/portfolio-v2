@@ -1,0 +1,581 @@
+/* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* line 17, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 21, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 34, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 41, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* line 47, /Users/swillis/Code/portfolio-v2/source/stylesheets/vendor/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 3, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  padding: 1em; }
+
+/* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.container:nth-child(1) {
+  padding: 0 1em 1em; }
+
+/* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.hideme, .headline, nav {
+  opacity: 0; }
+
+/* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.content {
+  position: relative;
+  z-index: 10; }
+
+/* line 23, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+.pt-page-rotateFall {
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation: rotateFall 1s both ease-in;
+  -moz-transform-origin: 0% 0%;
+  -moz-animation: rotateFall 1s both ease-in;
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+/* fall */
+@-webkit-keyframes rotateFall {
+  /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg); }
+
+  /* line 36, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  20% {
+    -webkit-transform: rotateZ(10deg);
+    -webkit-animation-timing-function: ease-out; }
+
+  /* line 37, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  40% {
+    -webkit-transform: rotateZ(17deg); }
+
+  /* line 38, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  60% {
+    -webkit-transform: rotateZ(16deg); }
+
+  /* line 39, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  100% {
+    -webkit-transform: translateY(100%) rotateZ(17deg); } }
+
+@-moz-keyframes rotateFall {
+  /* line 42, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  0% {
+    -moz-transform: rotateZ(0deg); }
+
+  /* line 43, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  20% {
+    -moz-transform: rotateZ(10deg);
+    -moz-animation-timing-function: ease-out; }
+
+  /* line 44, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  40% {
+    -moz-transform: rotateZ(17deg); }
+
+  /* line 45, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  60% {
+    -moz-transform: rotateZ(16deg); }
+
+  /* line 46, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  100% {
+    -moz-transform: translateY(100%) rotateZ(17deg); } }
+
+@keyframes rotateFall {
+  /* line 49, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  0% {
+    transform: rotateZ(0deg); }
+
+  /* line 50, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out; }
+
+  /* line 51, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  40% {
+    transform: rotateZ(17deg); }
+
+  /* line 52, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  60% {
+    transform: rotateZ(16deg); }
+
+  /* line 53, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_layouts.scss */
+  100% {
+    transform: translateY(100%) rotateZ(17deg); } }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+body {
+  font-family: "ratio";
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s; }
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+  body em {
+    font-weight: 600; }
+  /* line 11, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+  body #about,
+  body #work,
+  body #contact,
+  body footer {
+    text-align: center; }
+    /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+    body #about h2,
+    body #work h2,
+    body #contact h2,
+    body footer h2 {
+      font-size: 35px;
+      font-weight: 600;
+      padding: 60px 0 10px; }
+    /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+    body #about p,
+    body #work p,
+    body #contact p,
+    body footer p {
+      font-size: 18px;
+      max-width: 440px;
+      margin: 0 auto 1em;
+      font-weight: 500;
+      line-height: 1.5em; }
+      @media (max-width: 640px) {
+        /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_typography.scss */
+        body #about p,
+        body #work p,
+        body #contact p,
+        body footer p {
+          font-size: 16px; } }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+nav {
+  position: relative;
+  height: 30px; }
+  /* line 4, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+  nav p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 10px; }
+    /* line 10, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+    nav p a.title {
+      cursor: default; }
+  /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+  nav a {
+    color: white;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s; }
+  /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+  nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+    padding-top: 10px; }
+    /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+    nav ul li {
+      display: inline;
+      margin: 0 10px; }
+      /* line 27, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+      nav ul li a {
+        color: #9e392e;
+        text-decoration: none;
+        font-weight: 500;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        transition: 0.3s; }
+        /* line 32, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+        nav ul li a:hover {
+          color: white; }
+      /* line 36, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+      nav ul li a.hire {
+        color: white;
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        transition: 0s; }
+        /* line 39, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+        nav ul li a.hire:hover {
+          border-bottom: 2px solid white; }
+      @media (max-width: 640px) {
+        /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+        nav ul li {
+          display: none; } }
+      @media (max-width: 640px) {
+        /* line 48, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_nav.scss */
+        nav ul li:last-child {
+          display: inline; } }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+#homepage {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background-color: #f76848;
+  background-image: -webkit-linear-gradient(top, #ea5343, #f76848);
+  background-image: linear-gradient(to bottom, #ea5343, #f76848); }
+  @media (max-width: 640px) {
+    /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    #homepage .headline {
+      padding: 0 20px; } }
+  /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  #homepage .headline h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 15px; }
+    @media (max-width: 640px) {
+      /* line 14, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+      #homepage .headline h1 {
+        font-size: 40px; } }
+  /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  #homepage .headline h2 {
+    color: #9e392e;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 60px; }
+    @media (max-width: 640px) {
+      /* line 25, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+      #homepage .headline h2 {
+        font-size: 16px; } }
+  /* line 36, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+  #homepage .headline a {
+    color: white;
+    padding: 20px 17px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: 500; }
+    /* line 45, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_homepage.scss */
+    #homepage .headline a:hover {
+      border-color: white; }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+#about {
+  border-top: 5px dashed #f76848;
+  text-align: center;
+  background: #283849; }
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+  #about h2 {
+    color: white; }
+  /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+  #about img {
+    max-height: 200px;
+    margin: 0 0 20px; }
+  /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+  #about p {
+    text-align: justify !important;
+    font-size: 18px;
+    color: #c4c4c4; }
+    /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+    #about p a {
+      color: #ea6243;
+      font-weight: 500; }
+      /* line 19, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+      #about p a:hover {
+        border-bottom: 2px solid #ea6243; }
+    @media (max-width: 640px) {
+      /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+      #about p {
+        font-size: 16px; } }
+  /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+  #about .bios {
+    padding: 40px 0; }
+    /* line 31, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_about.scss */
+    #about .bios .bio-img {
+      border: 5px solid #314559;
+      width: 200px;
+      height: 200px;
+      border-radius: 500px;
+      margin: 0 auto 25px; }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+#work {
+  border-top: 5px dashed #283849;
+  background: #21a288; }
+  /* line 4, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  #work h2 {
+    color: white; }
+  /* line 7, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  #work p {
+    color: #0d584a; }
+
+/* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+.grid {
+  padding: 20px 20px 60px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center; }
+  /* line 18, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .grid li {
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    max-width: 360px; }
+  /* line 26, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .grid figure {
+    margin: 0;
+    position: relative; }
+    /* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figure img {
+      max-width: 100%;
+      display: block;
+      position: relative; }
+  /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #283849;
+    color: #c4c4c4; }
+    /* line 42, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 0.3em;
+      padding: 0;
+      color: white; }
+    /* line 49, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption span.description {
+      line-height: 1.2em; }
+    /* line 52, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a.visit, .grid figcaption span.category {
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      background: #ea5343;
+      color: white;
+      font-weight: 500;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s; }
+    /* line 62, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption span.category {
+      background: #c4c4c4;
+      color: #283849; }
+    /* line 66, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a.hireme {
+      padding: 15px 20px;
+      right: 132px; }
+    /* line 70, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a:hover {
+      background: #ec6455; }
+    /* line 73, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .grid figcaption a.credit {
+      color: #ea6243;
+      font-weight: 500;
+      position: relative;
+      top: 0;
+      right: 0; }
+      /* line 80, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+      .grid figcaption a.credit:hover {
+        border-bottom: 2px solid #ea6243;
+        background: none; }
+    @media (max-width: 640px) {
+      /* line 35, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+      .grid figcaption {
+        display: none; } }
+
+@media (min-width: 640px) {
+  /* line 93, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figure {
+    overflow: hidden; }
+    /* line 95, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+    .cs-style-3 figure img {
+      -webkit-transition: -webkit-transform 0.4s;
+      -moz-transition: -moz-transform 0.4s;
+      transition: transform 0.4s; }
+
+  /* line 102, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .no-touch .cs-style-3 figure:hover img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px); }
+
+  /* line 110, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figure.cs-hover img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  /* line 116, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figcaption {
+    height: 100px;
+    width: 320px;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s; }
+
+  /* line 132, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .no-touch .cs-style-3 figure:hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s; }
+
+  /* line 144, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s; }
+  /* line 154, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+  /* line 159, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_work.scss */
+  .cs-style-3 figcaption span.category {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; } }
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
+#contact {
+  border-top: 5px dashed #21a288;
+  background: #283849;
+  height: 307px; }
+  /* line 5, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
+  #contact h2 {
+    color: white; }
+  /* line 8, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
+  #contact p {
+    color: #c4c4c4;
+    margin-bottom: 50px !important; }
+  /* line 12, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
+  #contact a {
+    color: #283849;
+    background: #c4c4c4;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 30px 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px; }
+    /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_contact.scss */
+    #contact a:hover {
+      background: white; }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+footer {
+  background: #ecf0f1;
+  border-top: 5px dashed #283849; }
+  /* line 4, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+  footer ul.social {
+    padding: 3em; }
+    /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+    footer ul.social li {
+      display: inline;
+      margin: 20px 30px; }
+      @media (max-width: 640px) {
+        /* line 6, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+        footer ul.social li {
+          display: block; } }
+      /* line 13, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+      footer ul.social li a {
+        color: #283849;
+        font-size: 18px; }
+        /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+        footer ul.social li a:hover {
+          border-bottom: 2px solid #283849; }
+  /* line 22, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+  footer p.copy {
+    margin: 0 auto;
+    padding: 0 0 1em;
+    font-size: 14px;
+    font-weight: 400;
+    color: #283849; }
+  /* line 29, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_footer.scss */
+  footer p.hint {
+    padding: 0 0 3em;
+    font-size: 10px;
+    font-weight: 400;
+    color: #283849; }
+
+/* line 1, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+.egg {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  min-width: 100%;
+  background: #283849;
+  overflow: hidden; }
+  /* line 9, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  .egg h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin: 60px 0 10px; }
+  /* line 16, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  .egg p {
+    font-size: 18px;
+    color: #c4c4c4;
+    width: 440px;
+    margin: 0 auto 20px;
+    line-height: 1.5em; }
+  /* line 24, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  .egg iframe {
+    margin-bottom: 20px; }
+  /* line 28, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+  .egg a {
+    color: #ea6243;
+    font-weight: 500; }
+    /* line 32, /Users/swillis/Code/portfolio-v2/source/stylesheets/lib/base/_easter.scss */
+    .egg a:hover {
+      border-bottom: 2px solid #ea6243; }
